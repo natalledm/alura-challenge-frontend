@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="assets/font-awesome/css/all.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/main-menu.css">
+  <link rel="stylesheet" href="styles/main-code.css">
+  <link rel="stylesheet" href="styles/main-personalization.css">
   <title>Alura Dev</title>
 </head>
 <body>
@@ -27,15 +31,35 @@
         </div>
       </nav>
     </header>
-    <main>
-      <aside>
-        h3
+    <main class="main-container">
+      <aside class="main-menu">
+        <h2 class="title">MENU</h2>
+        <ul class="main-menu-list">
+          <li class="main-menu-list-item"> <a href="#"><i class="fas fa-code main-menu-list-icon"></i>Code Editor</a></li>
+          <li class="main-menu-list-item"><a href="#"><i class="fas fa-users main-menu-list-icon"></i>Community</a></li>
+        </ul>
       </aside>
-      <section>
-
+      <section class="main-code">
+        <div class="main-code_background">
+            <textarea name="code" class="code-box"></textarea>
+        </div>
+        <button class="highlight-code">Highlight your code</button>
       </section>
-      <section>
-
+      <section class="main-personalization">
+        <div class="main-personalization-project">
+          <h2 class="title">YOUR PROJECT</h2>
+          <input type="text" placeholder="Your project's name" class="input-project main-personalization_item">
+          <input type="text" placeholder="Your project's description" class="input-project main-personalization_item">
+        </div>
+        <div class="main-personalization-customization">
+          <h2 class="title">CUSTOMIZATION</h2>
+          <select name="language" id="language" class="select-language main-personalization_item">
+            <option value="javascript">Javascript</option>
+            <option value="java">Java</option>
+            <option value="c++">C++</option>
+          </select>
+          <input type="color" value="#5081FB" class="main-personalization-color-picker">
+        </div>
       </section>
     </main>
   </div>

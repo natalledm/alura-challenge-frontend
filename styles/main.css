@@ -14,10 +14,12 @@
 
 #body-wrap {
   background-color: var(--dark-blue);
+  height: 80vh;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
   font-family: var(--Inter);
+  color: var(--white);
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
