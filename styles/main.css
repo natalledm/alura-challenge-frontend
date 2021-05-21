@@ -41,7 +41,6 @@ a {
 }
 
 .input-field {
-  display: block;
   background-color: var(--input-color);
   color: var(--white);
   border: none;

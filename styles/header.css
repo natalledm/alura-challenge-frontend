@@ -8,13 +8,13 @@
 
 .nav-logo {
   width: 25%;
-  align-self: start;
+  align-self: center;
 }
 
 .nav-search {
+  display: block;
   width: 50%;
   align-self: center;
-  display: block;
   padding: 0.9375em;
   margin-left: 2em;
 }
@@ -35,16 +35,78 @@
   display: none;
 }
 
-@media (max-width:600px) {
-  .nav-search {
-    display: none;
+@media (min-width:426px) and (max-width: 768px) {
+  .nav-logo {
+    width: 20%;
+    align-self: center;
   }
+
+  .nav-logo-img {
+    width: 80%;
+    align-self: center;
+  }
+
+  .nav-search {
+    width: 60%;
+    align-self: center;
+    display: block;
+    padding: 0.9375em;
+    margin-left: none;
+  }
+  
   .nav-person {
     display: none;
   }
 
   .nav-icons {
-    display: block;
+    display: flex;
+    width: 20%;
+    flex-direction: row-reverse;
+    margin-right: 1em;
+  }
 
+  .nav-search-container {
+    display: none;
+  }
+
+  .nav-hamburguer-container{
+    align-self: center;
+  }
+}
+
+@media (max-width:425px) {
+
+  .header {
+    margin: 1em;
+    width: 90%;
+  }
+
+  .nav-logo {
+    width: 40%;
+    align-self: start;
+  }
+
+  .nav-search {
+    display: none;
+  }
+
+  .nav-person {
+    display: none;
+  }
+
+  .nav-icons {
+    display: flex;
+    width: 60%;
+    flex-direction: row-reverse;
+  }
+
+  .nav-search-container {
+    margin: 1em;
+    align-self: center;
+  }
+
+  .nav-hamburguer-container{
+    margin: 1em;
+    align-self: center;
   }
 }
