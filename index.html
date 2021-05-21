@@ -9,56 +9,53 @@
   <link rel="stylesheet" href="assets/font-awesome/css/all.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/body.css">
-  <link rel="stylesheet" href="styles/main-menu.css">
-  <link rel="stylesheet" href="styles/main-code.css">
-  <link rel="stylesheet" href="styles/main-personalization.css">
+  <link rel="stylesheet" href="styles/menu.css">
+  <link rel="stylesheet" href="styles/code.css">
+  <link rel="stylesheet" href="styles/personalization.css">
   <title>Alura Dev</title>
 </head>
 <body>
   <div id="body-wrap">
-    <header>
-      <nav class="nav">
-        <a href="#home" class="nav-logo"><img src="assets/logo/Logo.png" alt="Logo Alura Dev"></a>
-        <input type="text" class="nav-search" placeholder="Search for something">
-        <div class="nav-icons">
-          <i class="fas fa-search nav-search__icon"></i>
-          <i class="fas fa-bars nav-hamburguer"></i>
-        </div>
-        <div class="nav-person-container">
-          <img src="assets/Photo/Photo.png" alt="User photo" class="nav-person-photo"> 
-          <a href="#" class="nav-person-name"> John</a>
-        </div>
-      </nav>
+    <header class="header">
+      <a href="#home" class="nav-logo"><img src="assets/logo/Logo.png" alt="Logo Alura Dev"></a>
+      <input type="text" class="nav-search input-field" placeholder="Search for something">
+      <div class="nav-icons">
+        <i class="fas fa-search nav-search-icon"></i>
+        <i class="fas fa-bars nav-hamburguer"></i>
+      </div>
+      <div class="nav-person">
+        <img src="assets/Photo/Photo.png" alt="User photo" class="nav-person-photo"> 
+        <a href="#" class="nav-person-name"> John</a>
+      </div>
     </header>
-    <main class="main-container">
-      <aside class="main-menu">
+    <main class="main-body">
+      <aside class="menu">
         <h2 class="title">MENU</h2>
-        <ul class="main-menu-list">
-          <li class="main-menu-list-item"> <a href="#"><i class="fas fa-code main-menu-list-icon"></i>Code Editor</a></li>
-          <li class="main-menu-list-item"><a href="#"><i class="fas fa-users main-menu-list-icon"></i>Community</a></li>
+        <ul class="menu-list">
+          <li class="menu-list-item"> <a href="#"><i class="fas fa-code menu-list-icon"></i>Code Editor</a></li>
+          <li class="menu-list-item"><a href="#"><i class="fas fa-users menu-list-icon"></i>Community</a></li>
         </ul>
       </aside>
-      <section class="main-code">
-        <div class="main-code_background">
-            <textarea name="code" class="code-box"></textarea>
+      <section class="code">
+        <div class="code-background">
+          <textarea name="code" class="code-box"></textarea>
         </div>
-        <button class="highlight-code">Highlight your code</button>
+        <button class="code-highlight">Highlight your code</button>
       </section>
-      <section class="main-personalization">
-        <div class="main-personalization-project">
+      <section class="personalization">
+        <div class="personalization-project">
           <h2 class="title">YOUR PROJECT</h2>
-          <input type="text" placeholder="Your project's name" class="input-project main-personalization_item">
-          <input type="text" placeholder="Your project's description" class="input-project main-personalization_item">
+          <input type="text" placeholder="Your project's name" class="input-field personalization-field">
+          <input type="text" placeholder="Your project's description" class="input-field personalization-field personalization-field__description">
         </div>
-        <div class="main-personalization-customization">
+        <div class="customization">
           <h2 class="title">CUSTOMIZATION</h2>
-          <select name="language" id="language" class="select-language main-personalization_item">
+          <select name="language" id="language" class="personalization-language input-field">
             <option value="javascript">Javascript</option>
             <option value="java">Java</option>
             <option value="c++">C++</option>
           </select>
-          <input type="color" value="#5081FB" class="main-personalization-color-picker">
+          <input type="color" value="#5081FB" class="personalization-color">
         </div>
       </section>
     </main>

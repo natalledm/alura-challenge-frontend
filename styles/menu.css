@@ -1,0 +1,21 @@
+@import "main.css";
+
+.menu {
+  width: 20%;
+}
+
+.menu-list {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.menu-list-item {
+  padding: 5px;
+}
+
+.menu-list-icon {
+  background-color: var(--blue-300);
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}

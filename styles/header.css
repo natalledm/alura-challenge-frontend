@@ -1,47 +1,37 @@
 @import "main.css";
 
-
-.nav {
+.header {
   display: flex;
-  justify-content: space-between;
-  padding: 1rem;
+  margin: 2em;
+  height: 5vh;
 }
 
 .nav-logo {
-  flex-grow: 1;
+  width: 25%;
+  align-self: start;
 }
 
 .nav-search {
-  flex-grow: 2;
+  width: 50%;
+  align-self: center;
   display: block;
-  background-color: rgba(255, 255, 255, 0.16);
-  color: var(--white);
-  border: none;
-  border-radius: 5px;
+  padding: 0.9375em;
+  margin-left: 2em;
 }
 
-.nav-search__icon {
-  display: none;
-}
-
-.nav-person-container {
-  flex-grow: 1;
+.nav-person {
+  width: 25%;
   display: flex;
   justify-content: flex-end;
-}
-
-.nav-person-photo {
-  align-self: center;
+  margin-right: 2em;
 }
 
 .nav-person-name {
-  color: var(--white);
-  text-decoration: none;
   align-self: center;
-  padding: 0.5rem;
+  padding-left: 10px;
 }
 
-.nav-hamburguer {
+.nav-icons {
   display: none;
 }
 
@@ -49,29 +39,12 @@
   .nav-search {
     display: none;
   }
-  .nav-person-container {
+  .nav-person {
     display: none;
   }
 
   .nav-icons {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .nav-search__icon {
     display: block;
-    color: var(--white);
-    align-self: center;
-    padding: 0.8rem;
-  }
-  
-  .nav-hamburguer {
-    display: block;
-    color: var(--white);
-    align-self: center;
-    padding: 0.8rem;
-  }
 
+  }
 }

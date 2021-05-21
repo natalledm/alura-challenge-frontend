@@ -8,6 +8,8 @@
   --mac-green: #27C93F;
   --mac-red: #FF5F56;
   --mac-yellow: #FFBD2E;
+  --box-shadow: rgba(0, 0, 0, 0.24);
+  --input-color: rgba(255, 255, 255, 0.16);
   --Inter: 'Inter', sans-serif;
   --Roboto: 'Roboto', sans-serif;
 }
@@ -17,9 +19,35 @@
   height: 80vh;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 16px 24px var(--box-shadow);
   font-family: var(--Inter);
   color: var(--white);
+}
+
+.main-body {
+  display: flex;
+  margin: 2em;
+  height: 60vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.title {
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+}
+
+.input-field {
+  display: block;
+  background-color: var(--input-color);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

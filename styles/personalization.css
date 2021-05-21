@@ -1,0 +1,38 @@
+@import "main.css";
+
+.personalization {
+  width: 20%;
+}
+
+.personalization-project {
+  margin-bottom: 3em;
+}
+
+.personalization-field {
+  padding-left: 5px;
+  padding:  0.625em;
+  margin-bottom: 0.625em;
+  width: 72%;
+}
+
+.personalization-field__description {
+  padding-bottom: 4em;
+}
+
+.personalization-language {
+  padding-left: 5px;
+  padding:  0.625em;
+  margin-bottom: 0.625em;
+  width: 72%;
+}
+
+.personalization-color {
+  display: block;
+  width: 70%;
+  height: 1.875em;
+  margin-top: 0.625em;
+  padding: 5px;
+  border: solid 1px var(--white);
+  border-radius: 8px;
+  background-color: var(--dark-blue);
+}
