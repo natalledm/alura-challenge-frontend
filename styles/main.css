@@ -63,3 +63,38 @@ a {
   color: var(--white);
   opacity: 80%;
 }
+
+@media (min-width:426px) and (max-width: 768px) {
+  
+  #body-wrap {
+    height: auto;
+  }
+
+  .main-body {
+    height: auto;
+    margin: 1em;
+    flex-direction: column;
+    align-content: stretch;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width:425px) {
+  #body-wrap {
+    height: auto;
+  }
+
+  .main-body {
+    height: auto;
+    margin: 1em;
+    flex-direction: column;
+    align-content: stretch;
+  }
+
+  .menu {
+    display: none;
+  }
+}
