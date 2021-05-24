@@ -77,9 +77,6 @@ a {
     align-content: stretch;
   }
 
-  .menu {
-    display: none;
-  }
 }
 
 @media (max-width:425px) {
@@ -92,9 +89,5 @@ a {
     margin: 1em;
     flex-direction: column;
     align-content: stretch;
-  }
-
-  .menu {
-    display: none;
   }
 }

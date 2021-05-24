@@ -19,3 +19,55 @@
   border-radius: 10px;
   margin-right: 10px;
 }
+
+.hideOn {
+  display: none;
+}
+
+.hideOff {
+  display: block;
+}
+
+.nav-hamburguer-container {
+  display: none;
+}
+
+.nav-hamburguer-close {
+  display: none;
+}
+
+@media (min-width:426px) and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-list-ham {
+  list-style: none;
+  padding-inline-start: 0;
+  }
+
+  .nav-hamburguer-container {
+    display: block;
+  }
+  
+  .hamburguer-menu {
+    position: fixed;
+    right: 30px;
+    top: 100px;
+    width: 250px;
+    padding-left: 1em;
+    transition: transform 0.2s;
+    z-index: 500;
+    background-color: var(--blue-300);
+  }
+}
+
+@media (max-width:425px) {
+  .menu {
+    display: none;
+  }
+
+  .nav-hamburguer-container {
+    display: block;
+  }
+}

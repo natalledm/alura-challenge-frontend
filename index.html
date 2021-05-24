@@ -22,6 +22,18 @@
       <div class="nav-icons">
         <div class="nav-hamburguer-container">
           <i class="fas fa-bars nav-hamburguer"></i>
+          <i class="fas fa-window-close nav-hamburguer-close"></i>
+        </div>
+        <div class="hamburguer-menu hideOn">
+          <h2 class="title">MENU</h2>
+          <ul class="menu-list-ham">
+            <li class="menu-list-item-ham" onclick="hideMenu(event)"> <a href="#"><i class="fas fa-code menu-list-icon"></i>Code Editor</a></li>
+            <li class="menu-list-item-ham" onclick="hideMenu(event)"> <a href="#"><i class="fas fa-users menu-list-icon"></i>Community</a></li>
+          </ul>
+          <div class="nav-person">
+            <img src="assets/Photo/Photo.png" alt="User photo" class="nav-person-photo"> 
+            <a href="#" class="nav-person-name"> John</a>
+          </div>
         </div>
         <div class="nav-search-container">
           <i class="fas fa-search nav-search-icon"></i>
@@ -73,6 +85,7 @@
       </section>
     </main>
   </div>
-  <script src="app.js"></script>
+  <script src="background-color.js"></script>
+  <script src="hamburguer-menu.js"></script>
 </body>
 </html>
