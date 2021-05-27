@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/font-awesome/css/all.css">
+  <link rel="stylesheet" href="styles/highlight/night-owl.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/menu.css">
@@ -59,7 +60,7 @@
               <img src="assets/mac_buttons.svg" class="code-mac-buttons">
             </div>
             <div class="code-body">
-              <textarea name="code" class="code-box"></textarea>
+              <pre><code name="code" id="code-box" contenteditable="true" spellcheck="false" aria-label="editor"> Function test() {} </code></pre>
             </div>
           </div>
         </div>
@@ -75,9 +76,9 @@
           <h2 class="title">CUSTOMIZATION</h2>
           <div class="customization-select">
             <select name="language" id="language" class="personalization-language input-field">
-              <option value="javascript">Javascript</option>
-              <option value="java">Java</option>
-              <option value="c++">C++</option>
+              <option value="language-javascript">Javascript</option>
+              <option value="language-html">HTML</option>
+              <option value="language-css">CSS</option>
             </select>
             <input type="color" value="#5081FB" class="personalization-color">
           </div>
@@ -87,5 +88,8 @@
   </div>
   <script src="background-color.js"></script>
   <script src="hamburguer-menu.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script src="highlight.pack.js"></script>
+  <script src="highlight-code.js"></script>
 </body>
 </html>

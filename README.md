@@ -7,3 +7,4 @@ This was a challenge created by Alura to build a single page application followi
 - HTML
 - CSS
 - Javascript
+- Highlight.js
